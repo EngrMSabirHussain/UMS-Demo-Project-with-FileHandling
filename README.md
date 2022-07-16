@@ -65,5 +65,14 @@
 # Let move to Student Panel to check all Funcationality:
 ![image](https://user-images.githubusercontent.com/58667012/179352149-a0086aff-0c06-41af-b9e7-a5961c24d7fe.png)
 
+## Student Panel Main Screen
+![image](https://user-images.githubusercontent.com/58667012/179353351-1fd13f1e-f07d-4224-9931-c7f614f52918.png)
+
+### Option 1:
+![image](https://user-images.githubusercontent.com/58667012/179353408-9d9407c8-b6bf-490a-895c-ac00104615f4.png)
+
+### Option 2:
+![image](https://user-images.githubusercontent.com/58667012/179353420-b4c7243e-5fef-443e-b497-a9524a621294.png)
+
 
 
