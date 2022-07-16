@@ -1,0 +1,154 @@
+#include<iostream>
+#include<fstream>
+#include<string>
+using namespace std;
+
+void remove_record()
+{
+	fstream ofile, dfile;
+	ofile.open("data.dat", ios::in);
+	dfile.open("temp.dat", ios::out);
+	if (!ofile.is_open() && !dfile.is_open())
+	{
+		cout << "Connection not established";
+		return;
+	}
+	int search;
+	cout << "Enter Flight ID to Delete:";
+	cin >> search;
+	bool flag = 0;
+	while (!ofile.eof())
+	{
+		int flightID, date, month, year;
+		string dest;
+		ofile >> flightID >> dest >> date >> month >> year;
+		if (flightID == search)
+		{
+			flag = 1;
+		}
+		else
+		{
+			dfile << endl << flightID << "\t" << dest << "\t" << date << "\t" << month << "\t" << year;
+		}
+	}
+	if (flag == 0)
+	{
+		cout << "Flight ID not Found" << endl;
+	}
+	ofile.close();
+	dfile.close();
+	remove("data.dat");
+	rename("temp.dat", "data.dat");
+}
+void update_record()
+{
+	fstream ofile, dfile;
+	ofile.open("data.dat", ios::in);
+	dfile.open("temp.dat", ios::out);
+	if (!ofile.is_open()&& !dfile.is_open())
+	{
+		cout << "Connection not established";
+		return;
+	}
+	int search;
+	cout << "Enter Flight ID to Update:";
+	cin >> search;
+	bool flag = 0;
+	while (!ofile.eof())
+	{
+		int flightID, date, month, year;
+		string dest;
+		ofile >> flightID >> dest >> date >> month >> year;
+		if (flightID == search)
+		{
+			flag = 1;
+			cout << "Enter Destination:";
+			cin >> dest;
+			cout << "Enter Date (DD MM YYYY):";
+			cin >> date >> month >> year;
+			dfile << endl << flightID << "\t" << dest << "\t" << date << "\t" << month << "\t" << year;
+		}
+		else
+		{
+			dfile << endl << flightID << "\t" << dest << "\t" << date << "\t" << month << "\t" << year;
+		}
+	}
+	if (flag == 0)
+	{
+		cout << "Flight ID not Found" << endl;
+	}
+	ofile.close();
+	dfile.close();
+	remove("data.dat");
+	rename("temp.dat", "data.dat");
+}
+
+void search_record()
+{
+	fstream file;
+	file.open("data.dat", ios::in);
+	if (!file.is_open())
+	{
+		cout << "Connection not established";
+		return;
+	}
+	int search;
+	cout << "Enter Flight ID to Search:";
+	cin >> search;
+	bool flag = 0;
+	while (!file.eof())
+	{
+		int flightID, date, month, year;
+		string dest;
+		file >> flightID >> dest >> date >> month >> year;
+		if (flightID == search)
+		{
+			flag = 1;
+			cout << "Flight ID:" << flightID << "\t\t" << "Destination:" << dest << endl;
+			cout << "Date:" << date << "/" << month << "/" << year << "\n\n";
+		}
+	}
+	if (flag == 0)
+	{
+		cout << "Flight ID not Found"<<endl;
+	}
+}
+
+void show_record()
+{
+	fstream file;
+	file.open("data.dat", ios::app);
+	if (!file.is_open())
+	{
+		cout << "Connection not established";
+		return;
+	}
+	while (!file.eof())
+	{
+		int flightID, date, month, year;
+		string dest;
+		file >> flightID>>dest >> date >> month >> year;
+		cout << "Flight ID:" << flightID << "\t\t" << "Destination:" << dest<<endl;
+		cout << "Date:" << date << "/" << month << "/" << year<<"\n\n";
+	}
+}
+
+void new_record()
+{
+	fstream file;
+	file.open("data.dat", ios::app);
+	if (!file.is_open())
+	{
+		cout << "Connection not established";
+		return;
+	}
+	int flightID, date, month, year;
+	string dest;
+	cout << "Enter Flight ID:";
+	cin >> flightID;
+	cout << "Enter Destination:";
+	cin >> dest;
+	cout << "Enter Date (DD MM YYYY):";
+	cin >> date >> month >> year;
+	file<< endl << flightID <<"\t" << dest << "\t" << date << "\t" << month << "\t" << year;
+}
