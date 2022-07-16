@@ -37,5 +37,33 @@
 ### Option 6:
 ![image](https://user-images.githubusercontent.com/58667012/179351585-44b4c64b-1558-4c3f-a94e-425cc982f4ff.png)
 
+# Let move to Professor Panel to check all Funcationality:
+![image](https://user-images.githubusercontent.com/58667012/179351675-525854dd-2004-48f9-ad66-5a44d017968b.png)
+
+## Professor Panel Main Screen
+![image](https://user-images.githubusercontent.com/58667012/179351695-a22a0e6d-0c4f-4f95-bb81-4fa568a11bfe.png)
+
+### Option 1:
+![image](https://user-images.githubusercontent.com/58667012/179351768-f447a446-32f9-4b75-ad53-03678c5cd3c2.png)
+
+### Option 2:
+![image](https://user-images.githubusercontent.com/58667012/179351819-7eb3f5a0-5dea-42ad-9247-10d8bc5397f1.png)
+
+### Option 3:
+
+![image](https://user-images.githubusercontent.com/58667012/179351869-2d6c869b-6cff-4ca2-b599-3d40d9f6fe8e.png)
+
+### Option 4:
+![image](https://user-images.githubusercontent.com/58667012/179351988-449fae1c-cc7c-45f5-9a5b-f44689f51ba2.png)
+#### Updated Record:
+![image](https://user-images.githubusercontent.com/58667012/179352011-3082704c-0a04-4592-a5d6-d973c5c037be.png)
+
+### Option 5:
+![image](https://user-images.githubusercontent.com/58667012/179352089-83ba0b60-f405-4c56-9d77-07ea882496a3.png)
+
+
+# Let move to Student Panel to check all Funcationality:
+![image](https://user-images.githubusercontent.com/58667012/179352149-a0086aff-0c06-41af-b9e7-a5961c24d7fe.png)
+
 
 
